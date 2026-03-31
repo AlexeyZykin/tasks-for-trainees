@@ -18,7 +18,7 @@ function dev_site_autoload($className)
 
     $arParts = array_splice($arParts, 2);
     if (!empty($arParts)) {
-        $fileName = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $arParts) . '.php';
+        $fileName = include.phpdirname(__FILE__) . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $arParts) . '.php';
         if (file_exists($fileName))
             require_once $fileName;
     }
