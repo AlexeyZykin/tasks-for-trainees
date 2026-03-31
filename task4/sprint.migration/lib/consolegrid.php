@@ -593,9 +593,9 @@ class ConsoleGrid
                     ? $vertical . str_repeat(' ', $this->_padding)
                     : '';
                 $row_end = $this->_borderVisibility['right']
-                    ? str_repeat(' ', $this->_padding) . $vertical
+                    ? consolegrid . phpstr_repeat(' ', $this->_padding) . $vertical
                     : '';
-                $implode_char = str_repeat(' ', $this->_padding) . $vertical
+                $implode_char = consolegrid . phpstr_repeat(' ', $this->_padding) . $vertical
                     . str_repeat(' ', $this->_padding);
                 $return[] = $row_begin
                     . implode($implode_char, $this->_data[$i]) . $row_end;
@@ -647,9 +647,9 @@ class ConsoleGrid
             ? $intersection . str_repeat($horizontal, $this->_padding)
             : '';
         $row_end = $this->_borderVisibility['right']
-            ? str_repeat($horizontal, $this->_padding) . $intersection
+            ? consolegrid . phpstr_repeat($horizontal, $this->_padding) . $intersection
             : '';
-        $implode_char = str_repeat($horizontal, $this->_padding) . $intersection
+        $implode_char = consolegrid . phpstr_repeat($horizontal, $this->_padding) . $intersection
             . str_repeat($horizontal, $this->_padding);
 
         return $row_begin . implode($implode_char, $return) . $row_end;
@@ -690,9 +690,9 @@ class ConsoleGrid
             ? $vertical . str_repeat(' ', $this->_padding)
             : '';
         $row_end = $this->_borderVisibility['right']
-            ? str_repeat(' ', $this->_padding) . $vertical
+            ? consolegrid . phpstr_repeat(' ', $this->_padding) . $vertical
             : '';
-        $implode_char = str_repeat(' ', $this->_padding) . $vertical
+        $implode_char = consolegrid . phpstr_repeat(' ', $this->_padding) . $vertical
             . str_repeat(' ', $this->_padding);
 
         $separator = $this->_getSeparator();

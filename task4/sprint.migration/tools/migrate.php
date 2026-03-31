@@ -16,7 +16,7 @@ defined('NO_AGENT_STATISTIC') || define('NO_AGENT_STATISTIC', "Y");
 defined('NOT_CHECK_PERMISSIONS') || define('NOT_CHECK_PERMISSIONS', true);
 
 if (empty($_SERVER["DOCUMENT_ROOT"])) {
-    $_SERVER["DOCUMENT_ROOT"] = realpath(__DIR__ . '/../../../../');
+    $_SERVER["DOCUMENT_ROOT"] = realpath(__DIR__ . '/../../../PhpProjects/');
 }
 
 $DOCUMENT_ROOT = $_SERVER["DOCUMENT_ROOT"];

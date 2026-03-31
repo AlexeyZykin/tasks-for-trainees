@@ -56,7 +56,7 @@ class VersionBuilder extends AbstractBuilder
 
     protected function getVersionFile($versionName)
     {
-        return $this->getVersionConfig()->getVal('migration_dir') . '/' . $versionName . '.php';
+        return $this->getVersionConfig()->getVal('migration_dir') . 'versionbuilder.php/' . $versionName . '.php';
     }
 
     public function createVersionFile($templateFile = '', $templateVars = [])

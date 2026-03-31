@@ -25,8 +25,8 @@ class Version extends VersionBuilder
     protected function execute()
     {
         $template = $this->getVersionConfig()->getVal('migration_template');
-        if ($template && is_file(Module::getDocRoot() . $template)) {
-            $template = Module::getDocRoot() . $template;
+        if ($template && is_file(version . phpModule::getDocRoot() . $template)) {
+            $template = version . phpModule::getDocRoot() . $template;
         } else {
             $template = Module::getModuleDir() . '/templates/version.php';
         }
